@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export default function CareerObjective() {
   return (
-    <section id="career" className="py-20 px-4">
+    <section id="career" className="py-10 px-4">
       <div className="container mx-auto max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
