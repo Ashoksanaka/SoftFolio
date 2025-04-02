@@ -92,7 +92,7 @@ export default function Header() {
           <div className="container mx-auto px-4">
             <div className="flex h-16 items-center justify-between">
               <div className="font-bold text-xl">
-                <span className="text-primary">John</span> Doe
+                <span className="text-primary">Ashok</span> Sanaka
               </div>
               <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(false)}>
                 <X className="h-6 w-6" />

@@ -7,7 +7,7 @@ import Image from "next/image"
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-[50vh] flex flex-col justify-center items-center text-center px-4">
+<section id="home" className="relative min-h-[40vh] flex flex-col justify-center items-center text-center px-4 mt-16">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -21,7 +21,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="max-w-3xl mx-auto"
+        className="max-w-full mx-auto"
       >
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
@@ -38,19 +38,19 @@ export default function Hero() {
                 src="Profile.jpg"
                 alt="Profile Photo"
                 width={190}
-                height={600}
+                height={190}
                 className="h-full w-full object-cover"
               />
             </div>
           </div>
         </motion.div>
 
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">
+        <h1 className="text-3xl md:text-6xl font-bold tracking-tight mb-4">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">Ashok Sanaka</span>
         </h1>
-        <p className="text-xl md:text-2xl text-muted-foreground mb-8">Web Developer & Cyber Security Analyst</p>
+        <p className="text-lg md:text-2xl text-muted-foreground mb-8">Web Developer & Cyber Security Analyst</p>
 
-        <div className="flex justify-center gap-4 mb-8">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
           <Button variant="outline" size="sm" className="gap-2">
             <Phone className="h-4 w-4" />
             <span>+91 9705061039</span>
@@ -82,4 +82,3 @@ export default function Hero() {
     </section>
   )
 }
-
