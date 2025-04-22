@@ -27,11 +27,7 @@ export default function CareerObjective() {
           <Card>
             <CardContent className="p-6 text-lg leading-relaxed">
               <p>
-              Dedicated and detail-oriented web developer with a strong foundation in both front-end and 
-              back-end technologies, seeking to leverage my skills in creating robust, user-friendly web applications. 
-              Passionate about integrating cybersecurity best practices into the development process to ensure the security and integrity of applications. 
-              Eager to contribute to a dynamic team where I can apply my technical expertise and commitment to continuous learning in both 
-              web development and cybersecurity, ultimately driving innovative solutions that enhance user experience and protect sensitive data.
+              Motivated Cyber Security and Web Development professional with hands-on experience in ethical hacking and tool development. Seeking to leverage programming skills and cybersecurity expertise to enhance security measures in a dynamic organization.
               </p>
             </CardContent>
           </Card>
