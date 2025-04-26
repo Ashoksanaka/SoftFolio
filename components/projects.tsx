@@ -47,7 +47,7 @@ export default function Projects() {
         "A web application that provides a platform for lawyers and clients to connect, and manage legal cases.",
       image: "Just_Ease.png",
       technologies: ["HTML", "Tailwind CSS", "React JS", "Python", "Django", "PostgreSQL", "Docker"],
-      github: "https://github.com/EncryptaIN/Encrypta.IN_APPLICATION-Mailing-System.git",
+      github: "https://github.com/Ashoksanaka/Just-Ease.git",
     },
   ]
 
