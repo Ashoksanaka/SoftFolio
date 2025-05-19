@@ -1,13 +1,16 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Github, Linkedin, Mail, Phone } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
+import { motion } from "framer-motion";
+import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function Hero() {
   return (
-<section id="home" className="relative min-h-[40vh] flex flex-col justify-center items-center text-center px-4 mt-16">
+    <section
+      id="home"
+      className="relative min-h-[40vh] flex flex-col justify-center items-center text-center px-4 mt-16"
+    >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -46,26 +49,44 @@ export default function Hero() {
         </motion.div>
 
         <h1 className="text-3xl md:text-6xl font-bold tracking-tight mb-4">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">Ashok Sanaka</span>
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
+            Ashok Sanaka
+          </span>
         </h1>
-        <p className="text-lg md:text-2xl text-muted-foreground mb-8">Web Developer & Cyber Security Analyst</p>
+        <p className="text-lg md:text-2xl text-muted-foreground mb-8">
+          Web Developer & Cyber Security Analyst
+        </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
           <Button variant="outline" size="sm" className="gap-2">
             <Phone className="h-4 w-4" />
             <span>+91 9705061039</span>
           </Button>
-          <Button variant="outline" size="sm" className="gap-2">
-            <Mail className="h-4 w-4" />
-            <span>ashoksanaka116@gmail.com</span>
+          <Button asChild variant="outline" size="sm" className="gap-2">
+            <a href="mailto:ashoksanaka116@gmail.com">
+              <Mail className="h-4 w-4" />
+              <span>ashoksanaka116@gmail.com</span>
+            </a>
           </Button>
-          <Button variant="outline" size="sm" className="gap-2">
-            <Linkedin className="h-4 w-4" />
-            <span>linkedin.com/in/ashoksanaka</span>
+          <Button asChild variant="outline" size="sm" className="gap-2">
+            <a
+              href="https://linkedin.com/in/ashoksanaka"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Linkedin className="h-4 w-4" />
+              <span>linkedin.com/in/ashoksanaka</span>
+            </a>
           </Button>
-          <Button variant="outline" size="sm" className="gap-2">
-            <Github className="h-4 w-4" />
-            <span>github.com/Ashoksanaka</span>
+          <Button asChild variant="outline" size="sm" className="gap-2">
+            <a
+              href="https://github.com/Ashoksanaka"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Github className="h-4 w-4" />
+              <span>github.com/Ashoksanaka</span>
+            </a>
           </Button>
         </div>
 
@@ -73,12 +94,14 @@ export default function Hero() {
           size="lg"
           className="animate-pulse"
           onClick={() => {
-            document.getElementById("career")?.scrollIntoView({ behavior: "smooth" })
+            document
+              .getElementById("career")
+              ?.scrollIntoView({ behavior: "smooth" });
           }}
         >
           View My Portfolio
         </Button>
       </motion.div>
     </section>
-  )
+  );
 }

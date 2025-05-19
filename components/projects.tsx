@@ -26,14 +26,6 @@ export default function Projects() {
       github: "https://github.com/Ashoksanaka/Keylogger.git",
     },
     {
-      title: "Movie Recommendation System",
-      description:
-        " A personalized movie recommendation system developed to recommend the movies to the users",
-      image: "Movie_Recommendation_System.png",
-      technologies: ["C++","Bash", "Linux", "Terminal"],
-      github: "https://github.com/Ashoksanaka/Movie_Recommendation_System.git",
-    },
-    {
       title: "Mailing System",
       description:
         "A bulk mail dispatch system for sending personalized messages to various recipients.",
@@ -46,8 +38,24 @@ export default function Projects() {
       description:
         "A web application that provides a platform for lawyers and clients to connect, and manage legal cases.",
       image: "Just_Ease.png",
-      technologies: ["HTML", "Tailwind CSS", "React JS", "Python", "Django", "PostgreSQL", "Docker"],
+      technologies: ["HTML", "Tailwind CSS", "React JS", "Python", "Django", "PostgreSQL"],
       github: "https://github.com/Ashoksanaka/Just-Ease.git",
+    },
+    {
+      title: "Resume Refiner",
+      description:
+        "AI Resume generator with personalized profile and job description for high ATS score.",
+      image: "Resume_Refiner.png",
+      technologies: ["HTML", "Tailwind CSS", "React JS", "Python", "Django", "PostgreSQL"],
+      github: "https://github.com/Ashoksanaka/Resume-Refiner.git",
+    },
+    {
+      title: "Virtual Try On",
+      description:
+        "A virtual try-on app lets users see clothing on themselves in real-time before purchasing.",
+      image: "Virtual_Try_On.jpg",
+      technologies: ["HTML", "Tailwind CSS", "React JS", "Python", "Flask"],
+      github: "https://github.com/Ashoksanaka/Virtual-Try-On.git",
     },
   ]
 

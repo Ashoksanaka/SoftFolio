@@ -7,8 +7,8 @@ import { Award, Calendar } from "lucide-react"
 export default function Certifications() {
   const certifications = [
     {
-      title: "IBM professional Cyber Security Analyst",
-      issuer: "IBM",
+      title: "Cyber Security Analyst",
+      issuer: "Professional course by IBM",
       date: "May 2024",
       description: "Comprehensive training in cybersecurity principles, tools, and practices.",
     },
@@ -19,14 +19,14 @@ export default function Certifications() {
       description: "Proficiency in ethical hacking techniques and tools.",
     },
     {
-      title: "Information Security Management",
-      issuer: "Infosys",
+      title: "Information Security",
+      issuer: "Infosys SpringBoard",
       date: "August 2024",
       description: "Understanding of information security management systems and practices.",
     },
     {
       title: "Cyber Security Analyst",
-      issuer: "TATA group",
+      issuer: "Job simulation by TATA group",
       date: "December 2023",
       description: "Proficiency in cybersecurity principles, Identity and Access Management(IAM)"
     }

@@ -9,9 +9,9 @@ export default function Skills() {
     {
       category: "Programming Languages",
       skills: [
-        { name: "C/C++", level: 85 },
-        { name: "Python", level: 75 },
-        { name: "java", level: 40 },
+        { name: "C", level: 85 },
+        { name: "C++", level: 85 },
+        { name: "Python", level: 750 },
         { name: "JavaScript", level: 60 },
       ],
     },
@@ -25,7 +25,7 @@ export default function Skills() {
       ],
     },
     {
-      category: "Cyber Security & Penetration Testing",
+      category: "Cyber Security & Ethical Hacking",
       skills: [
         { name: "Kali Linux", level: 95 },
         { name: "Computer Networking", level: 85 },

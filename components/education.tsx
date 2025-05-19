@@ -7,7 +7,7 @@ import { CalendarDays, GraduationCap, MapPin } from "lucide-react"
 export default function Education() {
   const education = [
     {
-      degree: "Bachelor of Technology",
+      degree: "Graduation - Bachelor of Technology",
       institution: "Anil Neerukonda Institute of Technology and Sciences",
       location: "Visakhapatnam, India",
       duration: "2021 - 2025",
@@ -15,7 +15,7 @@ export default function Education() {
       specialization: "Electronics and Communication Engineering",
     },
     {
-      degree: "XII - Science",
+      degree: "XII - Senior Secondary School Certificate",
       institution: "Narayana Junior College",
       location: "Vijayawada, India",
       duration: "2019 - 2021",

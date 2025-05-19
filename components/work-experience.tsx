@@ -13,10 +13,10 @@ export default function WorkExperience() {
       location: "Rourkela, India",
       duration: "Dec 2024 - March 2025",
       responsibilities: [
-        "Developed and deployed Bulk mailing web applications using HTML, CSS, JavaScript, and Python",
+        "Developed Bulk mailing web application using HTML, CSS, JavaScript, and Python",
         "maintained and updated the application's code repository using Git",
         "Participated in code reviews and mentored fellow developers",
-        "Managed the server uptime using SSH ",
+        "Managed the server lifecycle using SSH ",
       ],
       technologies: ["HTML", "CSS", "JavaScript", "Python", "Flask", "Git", "GitHub", "Linux"],
     },
