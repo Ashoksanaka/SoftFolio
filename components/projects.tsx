@@ -40,23 +40,8 @@ export default function Projects() {
       image: "Just_Ease.png",
       technologies: ["HTML", "Tailwind CSS", "React JS", "Python", "Django", "PostgreSQL"],
       github: "https://github.com/Ashoksanaka/Just-Ease.git",
-    },
-    {
-      title: "Resume Refiner",
-      description:
-        "AI Resume generator with personalized profile and job description for high ATS score.",
-      image: "Resume_Refiner.png",
-      technologies: ["HTML", "Tailwind CSS", "React JS", "Python", "Django", "PostgreSQL"],
-      github: "https://github.com/Ashoksanaka/Resume-Refiner.git",
-    },
-    {
-      title: "Virtual Try On",
-      description:
-        "A virtual try-on app lets users see clothing on themselves in real-time before purchasing.",
-      image: "Virtual_Try_On.jpg",
-      technologies: ["HTML", "Tailwind CSS", "React JS", "Python", "Flask"],
-      github: "https://github.com/Ashoksanaka/Virtual-Try-On.git",
-    },
+      liveUrl: "https://just-ease-india.vercel.app"
+    }
   ]
 
   return (
@@ -109,6 +94,14 @@ export default function Projects() {
                       <span>Code</span>
                     </a>
                   </Button>
+                  {project.title === "Just-Ease" && project.liveUrl && (
+                    <Button variant="outline" size="sm" className="gap-2" asChild>
+                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="h-4 w-4" />
+                        <span>Live</span>
+                      </a>
+                    </Button>
+                  )}
                 </CardFooter>
               </Card>
             </motion.div>
@@ -118,4 +111,3 @@ export default function Projects() {
     </section>
   )
 }
-
