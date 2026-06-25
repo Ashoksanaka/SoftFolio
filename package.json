@@ -45,7 +45,7 @@
     "embla-carousel-react": "latest",
     "input-otp": "latest",
     "lucide-react": "latest",
-    "next": "latest",
+    "next": "15.1.3",
     "next-themes": "latest",
     "react": "latest",
     "react-day-picker": "latest",
