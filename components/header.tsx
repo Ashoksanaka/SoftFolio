@@ -4,7 +4,6 @@ import type React from "react"
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { ModeToggle } from "@/components/mode-toggle"
 import { Menu, X } from "lucide-react"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
@@ -74,10 +73,9 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center space-x-2">
-            <ModeToggle />
-<Button className="hidden md:flex" onClick={() => window.open('/SOFT RESUME.pdf', '_blank')}>
-  Download CV
-</Button>
+            <Button className="hidden md:flex" onClick={() => window.open('/Ashok_DevSecOps.pdf', '_blank')}>
+              Download CV
+            </Button>
             <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               <Menu className="h-6 w-6" />
               <span className="sr-only">Toggle menu</span>
@@ -112,9 +110,9 @@ export default function Header() {
                   {item.name}
                 </a>
               ))}
-<Button className="w-full mt-4" onClick={() => window.open('/SOFT RESUME.pdf', '_blank')}>
-  Download CV
-</Button>
+              <Button className="w-full mt-4" onClick={() => window.open('/SOFT RESUME.pdf', '_blank')}>
+                Download CV
+              </Button>
             </div>
           </nav>
         </div>
