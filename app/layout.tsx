@@ -7,7 +7,7 @@ import Header from "@/components/header"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Professional Portfolio",
+  title: "Ashok Sanaka",
   description: "A professional portfolio showcasing skills, projects, and achievements",
     generator: 'v0.dev'
 }
