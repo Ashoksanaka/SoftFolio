@@ -1,9 +1,6 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
 import { Github, Linkedin, Mail, Phone } from "lucide-react"
 
 export default function Contact() {
@@ -21,61 +18,66 @@ export default function Contact() {
           <div className="h-1 w-20 bg-primary mx-auto"></div>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
-            <div className="space-y-6">
-              <div className="flex items-center gap-4">
-                <div className="bg-primary/10 p-3 rounded-full">
-                  <Phone className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">Phone</p>
-                  <p className="font-medium">+91 9705061039</p>
-                </div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="max-w-5xl mx-auto"
+        >
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="flex items-center gap-4 bg-background p-4 rounded-xl shadow-sm border hover:border-primary/50 hover:shadow-md transition-all duration-300">
+              <div className="bg-primary/10 p-3 rounded-full shrink-0">
+                <Phone className="h-6 w-6 text-primary" />
               </div>
-
-              <div className="flex items-center gap-4">
-                <div className="bg-primary/10 p-3 rounded-full">
-                  <Mail className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">Email</p>
-                  <p className="font-medium">ashoksanaka116@gmail.com</p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4">
-                <div className="bg-primary/10 p-3 rounded-full">
-                  <Linkedin className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">LinkedIn</p>
-                  <p className="font-medium">www.linkedin.com/in/ashoksanaka</p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4">
-                <div className="bg-primary/10 p-3 rounded-full">
-                  <Github className="h-6 w-6 text-primary" />
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">GitHub</p>
-                  <p className="font-medium">github.com/Ashoksanaka</p>
-                </div>
+              <div className="min-w-0">
+                <p className="text-xs text-muted-foreground uppercase font-semibold tracking-wider">Phone</p>
+                <a href="tel:+919705061039" className="font-medium text-sm hover:text-primary transition-colors block">
+                  +91 9705061039
+                </a>
               </div>
             </div>
-          </motion.div>
 
+            <div className="flex items-center gap-4 bg-background p-4 rounded-xl shadow-sm border hover:border-primary/50 hover:shadow-md transition-all duration-300">
+              <div className="bg-primary/10 p-3 rounded-full shrink-0">
+                <Mail className="h-6 w-6 text-primary" />
+              </div>
+              <div className="min-w-0">
+                <p className="text-xs text-muted-foreground uppercase font-semibold tracking-wider">Email</p>
+                <a href="mailto:ashoksanaka116@gmail.com" className="font-medium text-sm truncate block hover:text-primary transition-colors">
+                  ashoksanaka116@gmail.com
+                </a>
+              </div>
+            </div>
 
-        </div>
+            <div className="flex items-center gap-4 bg-background p-4 rounded-xl shadow-sm border hover:border-primary/50 hover:shadow-md transition-all duration-300">
+              <div className="bg-primary/10 p-3 rounded-full shrink-0">
+                <Linkedin className="h-6 w-6 text-primary" />
+              </div>
+              <div className="min-w-0">
+                <p className="text-xs text-muted-foreground uppercase font-semibold tracking-wider">LinkedIn</p>
+                <a href="https://www.linkedin.com/in/ashoksanaka" target="_blank" rel="noopener noreferrer" className="font-medium text-sm truncate block hover:text-primary transition-colors">
+                  in/ashoksanaka
+                </a>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-4 bg-background p-4 rounded-xl shadow-sm border hover:border-primary/50 hover:shadow-md transition-all duration-300">
+              <div className="bg-primary/10 p-3 rounded-full shrink-0">
+                <Github className="h-6 w-6 text-primary" />
+              </div>
+              <div className="min-w-0">
+                <p className="text-xs text-muted-foreground uppercase font-semibold tracking-wider">GitHub</p>
+                <a href="https://github.com/Ashoksanaka" target="_blank" rel="noopener noreferrer" className="font-medium text-sm truncate block hover:text-primary transition-colors">
+                  Ashoksanaka
+                </a>
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   )
 }
+
 
