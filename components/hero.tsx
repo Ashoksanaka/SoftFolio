@@ -54,13 +54,13 @@ export default function Hero() {
           </span>
         </h1>
         <p className="text-lg md:text-2xl text-muted-foreground mb-8">
-          Web Developer & Cyber Security Analyst
+          Full Stack Developer | DevOps Engineer | Cyber Security Analyst
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
           <Button variant="outline" size="sm" className="gap-2">
             <Phone className="h-4 w-4" />
-            <span>+91 9705061039</span>
+            <span>+91-9705061039</span>
           </Button>
           <Button asChild variant="outline" size="sm" className="gap-2">
             <a href="mailto:ashoksanaka116@gmail.com">

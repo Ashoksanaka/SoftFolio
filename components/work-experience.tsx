@@ -8,9 +8,25 @@ import { Badge } from "@/components/ui/badge"
 export default function WorkExperience() {
   const experiences = [
     {
+      position: "DevOps Engineer Intern",
+      company: "Bridgeit App Inc",
+      location: "California, USA (Remote)",
+      duration: "Aug 2025 - Present",
+      responsibilities: [
+        "Architected and enforced zero-trust network security across GCP — Shared VPC, Cloud Armor, mTLS, and WireGuard VPN",
+        "Led organization-wide Cloud & Pipeline Health Audit, remediating 30+ findings across IAM, compute, secrets, and CI/CD",
+        "Designed least-privilege IAM model, revoking Owner/Editor roles and migrating workloads to Workload Identity Federation",
+        "Built end-to-end CI/CD security pipeline — SAST, DAST, container scanning, secret scanning, and DefectDojo integration",
+        "Engineered FERPA-compliant data controls for student records including encryption, access segregation, and audit logging",
+        "Reconstructed PgBouncer infrastructure with Terraform + Docker, implementing automated backup/restore and DB role separation",
+        "Drove SOC 2 readiness program — vendor evaluation, organizational controls framework, and evidence collection automation",
+      ],
+      technologies: ["GCP", "PostgreSQL", "PgBouncer", "SOC2", "Terraform", "Docker", "Bash Automation", "CI/CD security", "Code Security", "Grafana", "Prometheus", "VPN", "FireWalls", ],
+    },
+    {
       position: "Information Technology Intern",
       company: "Encrypta",
-      location: "Rourkela, India",
+      location: "Rourkela, India (Remote)",
       duration: "Dec 2024 - March 2025",
       responsibilities: [
         "Developed Bulk mailing web application using HTML, CSS, JavaScript, and Python",
@@ -20,16 +36,7 @@ export default function WorkExperience() {
       ],
       technologies: ["HTML", "CSS", "JavaScript", "Python", "Flask", "Git", "GitHub", "Linux"],
     },
-    {
-      position: "Cyber Security Intern",
-      company: "SlashMark IT solutions pvt Ltd",
-      location: "Hyderabad, India",
-      duration: "Feb 2024 - May 2024",
-      responsibilities: [
-        "Independently developed few minor projects using C/C++, Python, and Bash",
-      ],
-      technologies: ["C/C++", "Python", "Bash", "Linux"],
-    },
+    
   ]
 
   return (

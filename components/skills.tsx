@@ -9,37 +9,38 @@ export default function Skills() {
     {
       category: "Programming Languages",
       skills: [
-        { name: "C", level: 85 },
-        { name: "C++", level: 85 },
+        { name: "C/C++", level: 85 },
+        { name: "Golang", level: 55 },
         { name: "Python", level: 75 },
         { name: "JavaScript", level: 60 },
       ],
     },
     {
-      category: "Web Development",
+      category: "Full Stack Development",
       skills: [
-        { name: "HTML/CSS", level: 85 },
-        { name: "JavaScript(React JS)", level: 80 },
-        { name: "Python(Flask, Django)", level: 75 },
-        { name: "PostgreSQL", level: 85 },
+        { name: "HTML, CSS", level: 85 },
+        { name: "React JS, Next JS", level: 80 },
+        { name: "Flask, Django", level: 75 },
+        { name: "PostgreSQL, MongoDB", level: 85 },
       ],
     },
     {
       category: "Cyber Security & Ethical Hacking",
       skills: [
-        { name: "Kali Linux", level: 95 },
-        { name: "Computer Networking", level: 85 },
-        { name: "CryptoGraphy", level: 75 },
-        { name: "Tools(NMap, Metasploit, Burp Suite, Wireshark)", level: 90 },
+        { name: "Web Application Security", level: 85 },
+        { name: "Network Security", level: 75 },
+        { name: "Cloud Security", level: 90 },
+        { name: "Penetration Testing", level: 95 },
+        
       ],
     },
     {
-      category: "DevOps & Tools",
+      category: "Cloud &DevOps",
       skills: [
-        { name: "BASH shell Scripting", level: 90 },
-        { name: "Git/GitHub", level: 95 },
-        { name: "Docker", level: 75 },
-        { name: "AWS", level: 65 },
+        { name: "Automation(Bash, Python)", level: 90 },
+        { name: "CI/CD(GitHub Actions, Jenkins)", level: 95 },
+        { name: "Containerization(Docker, Kubernetes)", level: 75 },
+        { name: "Cloud(AWS, GCP)", level: 80 },
       ],
     },
   ]

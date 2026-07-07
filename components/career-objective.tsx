@@ -27,11 +27,14 @@ export default function CareerObjective() {
           <Card>
             <CardContent className="p-6 text-lg leading-relaxed">
               <p>
-              Dedicated and detail-oriented web developer with a strong foundation in both front-end and
-              back-end technologies, seeking to leverage my skills in creating robust, user-friendly web applications. 
-              Passionate about integrating cybersecurity best practices into the development process to ensure the security and integrity of applications. 
-              Eager to contribute to a dynamic team where I can apply my technical expertise and commitment to continuous learning in both 
-              web development and cybersecurity, ultimately driving innovative solutions that enhance user experience and protect sensitive data.
+                Highly motivated and detail-oriented entry-level DevSecOps professional with hands-on experience in designing, 
+                implementing, and maintaining CI/CD automation pipelines, conducting robust security assessments, and managing 
+                scalable infrastructure environments. Skilled in Python-based automation and Linux systems administration, 
+                with a strong commitment to integrating security best practices across all stages of the software development 
+                lifecycle. Adept at leveraging cloud technologies to architect and optimize secure, automated deployment workflows. 
+                Passionate about continuous learning and contributing to high-performing teams dedicated to delivering reliable, 
+                resilient, and secure technological solutions.
+           
               </p>
             </CardContent>
           </Card>

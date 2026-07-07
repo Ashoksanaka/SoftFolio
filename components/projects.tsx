@@ -41,7 +41,25 @@ export default function Projects() {
       technologies: ["HTML", "Tailwind CSS", "React JS", "Python", "Django", "PostgreSQL"],
       github: "https://github.com/Ashoksanaka/Just-Ease.git",
       liveUrl: "https://just-ease-india.vercel.app"
-    }
+    },
+    {
+      title: "Resume Refiner",
+      description:
+        "An AI powered resume builder that helps you build your ATS compatible resume in minutes.",
+      image: "Resume_Refiner.png",
+      technologies: ["HTML", "Tailwind CSS", "Typescript", "Next.js", "Python", "Django", "PostgreSQL", "Redis", "Docker", "LaTeX", "AI", "Celery" ],
+      github: "https://github.com/Ashoksanaka/Resume-Refiner-Backend",
+      liveUrl: "https://resume-refiner-frontend.vercel.app"
+    },
+    {
+      title: "AI Wealth Advisor",
+      description:
+        "An AI powered wealth advisor that helps you manage your finances.",
+      image: "AI_Wealth_Advisor.png",
+      technologies: ["HTML", "Tailwind CSS", "Typescript", "Next.js", "Node JS", "Clerk", "Docker", "PostgreSQL", "Chatbot", "NVIDIA AI" ],
+      github: "https://github.com/Ashoksanaka/AI-Wealth-Advisor",
+      liveUrl: "https://ai-wealth-advisor-eight.vercel.app/"
+    },
   ]
 
   return (
@@ -94,7 +112,7 @@ export default function Projects() {
                       <span>Code</span>
                     </a>
                   </Button>
-                  {project.title === "Just-Ease" && project.liveUrl && (
+                  {project.liveUrl && (
                     <Button variant="outline" size="sm" className="gap-2" asChild>
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="h-4 w-4" />
