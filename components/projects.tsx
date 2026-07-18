@@ -4,13 +4,154 @@ import { motion } from "framer-motion"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Github, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react"
+import { Github, ExternalLink } from "lucide-react"
 import Image from "next/image"
-import { useState } from "react"
+import styled from "styled-components"
+
+const StyledCarousel = styled.div`
+  @keyframes autoRun3d {
+    from {
+      transform: perspective(1000px) rotateY(-360deg);
+    }
+    to {
+      transform: perspective(1000px) rotateY(0deg);
+    }
+  }
+
+  @keyframes animateBrightness {
+    10% {
+      filter: brightness(1);
+    }
+    50% {
+      filter: brightness(0.7);
+    }
+    90% {
+      filter: brightness(1);
+    }
+  }
+
+  .carousel-3d {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun3d 25s linear infinite;
+    will-change: transform;
+  }
+
+  .carousel-3d:hover {
+    animation-play-state: paused !important;
+  }
+
+  .carousel-3d:hover > div {
+    animation-play-state: paused !important;
+  }
+
+  .carousel-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center center;
+    animation: animateBrightness 25s linear infinite;
+    transition-duration: 200ms;
+    will-change: transform, filter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel-card:nth-child(1) {
+    transform: translate(-50%, -50%) rotateY(0deg) translateZ(400px);
+    animation-delay: -0s;
+    left: 50%;
+    top: 50%;
+  }
+
+  .carousel-card:nth-child(2) {
+    transform: translate(-50%, -50%) rotateY(36deg) translateZ(400px);
+    animation-delay: -2.5s;
+    left: 50%;
+    top: 50%;
+  }
+
+  .carousel-card:nth-child(3) {
+    transform: translate(-50%, -50%) rotateY(72deg) translateZ(400px);
+    animation-delay: -5s;
+    left: 50%;
+    top: 50%;
+  }
+
+  .carousel-card:nth-child(4) {
+    transform: translate(-50%, -50%) rotateY(108deg) translateZ(400px);
+    animation-delay: -7.5s;
+    left: 50%;
+    top: 50%;
+  }
+
+  .carousel-card:nth-child(5) {
+    transform: translate(-50%, -50%) rotateY(144deg) translateZ(400px);
+    animation-delay: -10s;
+    left: 50%;
+    top: 50%;
+  }
+
+  .carousel-card:nth-child(6) {
+    transform: translate(-50%, -50%) rotateY(180deg) translateZ(400px);
+    animation-delay: -12.5s;
+    left: 50%;
+    top: 50%;
+  }
+
+  .carousel-card:nth-child(7) {
+    transform: translate(-50%, -50%) rotateY(216deg) translateZ(400px);
+    animation-delay: -15s;
+    left: 50%;
+    top: 50%;
+  }
+
+  .carousel-card:nth-child(8) {
+    transform: translate(-50%, -50%) rotateY(252deg) translateZ(400px);
+    animation-delay: -17.5s;
+    left: 50%;
+    top: 50%;
+  }
+
+  .carousel-card:nth-child(9) {
+    transform: translate(-50%, -50%) rotateY(288deg) translateZ(400px);
+    animation-delay: -20s;
+    left: 50%;
+    top: 50%;
+  }
+
+  .carousel-card:nth-child(10) {
+    transform: translate(-50%, -50%) rotateY(324deg) translateZ(400px);
+    animation-delay: -22.5s;
+    left: 50%;
+    top: 50%;
+  }
+
+  .carousel-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+  }
+
+  .card-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .project-card {
+    width: 90%;
+    max-width: 400px;
+    height: 100%;
+  }
+`
 
 export default function Projects() {
-  const [currentIndex, setCurrentIndex] = useState(0)
-
   const projects = [
     {
       title: "Mailing System",
@@ -39,27 +180,74 @@ export default function Projects() {
       github: "https://github.com/Ashoksanaka/AI-Wealth-Advisor",
       liveUrl: "https://ai-wealth-advisor-eight.vercel.app/"
     },
+    {
+      title: "Project 4",
+      description:
+        "Additional project placeholder.",
+      image: "/placeholder.svg",
+      technologies: ["React", "Node.js", "MongoDB"],
+      github: "#",
+      liveUrl: "#"
+    },
+    {
+      title: "Project 5",
+      description:
+        "Additional project placeholder.",
+      image: "/placeholder.svg",
+      technologies: ["React", "Node.js", "MongoDB"],
+      github: "#",
+      liveUrl: "#"
+    },
+    {
+      title: "Project 6",
+      description:
+        "Additional project placeholder.",
+      image: "/placeholder.svg",
+      technologies: ["React", "Node.js", "MongoDB"],
+      github: "#",
+      liveUrl: "#"
+    },
+    {
+      title: "Project 7",
+      description:
+        "Additional project placeholder.",
+      image: "/placeholder.svg",
+      technologies: ["React", "Node.js", "MongoDB"],
+      github: "#",
+      liveUrl: "#"
+    },
+    {
+      title: "Project 8",
+      description:
+        "Additional project placeholder.",
+      image: "/placeholder.svg",
+      technologies: ["React", "Node.js", "MongoDB"],
+      github: "#",
+      liveUrl: "#"
+    },
+    {
+      title: "Project 9",
+      description:
+        "Additional project placeholder.",
+      image: "/placeholder.svg",
+      technologies: ["React", "Node.js", "MongoDB"],
+      github: "#",
+      liveUrl: "#"
+    },
+    {
+      title: "Project 10",
+      description:
+        "Additional project placeholder.",
+      image: "/placeholder.svg",
+      technologies: ["React", "Node.js", "MongoDB"],
+      github: "#",
+      liveUrl: "#"
+    },
   ]
-
-  const goToPrevious = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? projects.length - 1 : prevIndex - 1
-    )
-  }
-
-  const goToNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === projects.length - 1 ? 0 : prevIndex + 1
-    )
-  }
-
-  const goToSlide = (index: number) => {
-    setCurrentIndex(index)
-  }
 
   return (
     <section id="projects" className="py-10 px-4">
-      <div className="container mx-auto max-w-4xl">
+      <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -71,96 +259,56 @@ export default function Projects() {
           <div className="h-1 w-20 bg-primary mx-auto"></div>
         </motion.div>
 
-        {/* Carousel Container */}
-        <div className="relative w-full">
-          {/* Slides */}
-          <div className="overflow-hidden">
-            <motion.div
-              key={currentIndex}
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -100 }}
-              transition={{ duration: 0.5 }}
-            >
-              <Card className="h-full flex flex-col overflow-hidden">
-                <div className="relative h-56 w-full overflow-hidden">
-                  <Image
-                    src={projects[currentIndex].image || "/placeholder.svg"}
-                    alt={projects[currentIndex].title}
-                    fill
-                    className="object-cover transition-transform hover:scale-105"
-                  />
-                </div>
-                <CardContent className="p-6 flex-grow">
-                  <h3 className="text-xl font-bold mb-2">{projects[currentIndex].title}</h3>
-                  <p className="text-muted-foreground mb-4">{projects[currentIndex].description}</p>
-                  <div className="flex flex-wrap gap-2 mt-4">
-                    {projects[currentIndex].technologies.map((tech, techIndex) => (
-                      <Badge key={techIndex} variant="secondary">
-                        {tech}
-                      </Badge>
-                    ))}
+        {/* 3D Carousel */}
+        <StyledCarousel>
+          <div className="carousel-3d">
+            {projects.map((project, index) => (
+              <div key={index} className="carousel-card">
+                <Card className="project-card h-full flex flex-col overflow-hidden">
+                  <div className="relative h-40 w-full overflow-hidden">
+                    <Image
+                      src={project.image || "/placeholder.svg"}
+                      alt={project.title}
+                      fill
+                      className="object-cover transition-transform hover:scale-105"
+                    />
                   </div>
-                </CardContent>
-                <CardFooter className="px-6 pb-6 pt-0 flex gap-2">
-                  <Button variant="outline" size="sm" className="gap-2" asChild>
-                    <a href={projects[currentIndex].github} target="_blank" rel="noopener noreferrer">
-                      <Github className="h-4 w-4" />
-                      <span>Code</span>
-                    </a>
-                  </Button>
-                  {projects[currentIndex].liveUrl && (
-                    <Button variant="outline" size="sm" className="gap-2" asChild>
-                      <a href={projects[currentIndex].liveUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="h-4 w-4" />
-                        <span>Live</span>
+                  <CardContent className="p-4 flex-grow overflow-y-auto">
+                    <h3 className="text-lg font-bold mb-2">{project.title}</h3>
+                    <p className="text-muted-foreground mb-3 text-sm">{project.description}</p>
+                    <div className="flex flex-wrap gap-1">
+                      {project.technologies.slice(0, 4).map((tech, techIndex) => (
+                        <Badge key={techIndex} variant="secondary" className="text-xs">
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
+                  </CardContent>
+                  <CardFooter className="px-4 pb-4 pt-2 flex gap-2">
+                    <Button variant="outline" size="sm" className="gap-1 text-xs" asChild>
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Github className="h-3 w-3" />
+                        <span>Code</span>
                       </a>
                     </Button>
-                  )}
-                </CardFooter>
-              </Card>
-            </motion.div>
+                    {project.liveUrl && project.liveUrl !== "#" && (
+                      <Button variant="outline" size="sm" className="gap-1 text-xs" asChild>
+                        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="h-3 w-3" />
+                          <span>Live</span>
+                        </a>
+                      </Button>
+                    )}
+                  </CardFooter>
+                </Card>
+              </div>
+            ))}
           </div>
+        </StyledCarousel>
 
-          {/* Left Arrow */}
-          <button
-            onClick={goToPrevious}
-            className="absolute left-0 top-1/3 -translate-y-1/2 -translate-x-12 md:-translate-x-16 bg-primary hover:bg-primary/80 text-primary-foreground rounded-full p-2 transition-all z-10"
-            aria-label="Previous project"
-          >
-            <ChevronLeft className="h-6 w-6" />
-          </button>
-
-          {/* Right Arrow */}
-          <button
-            onClick={goToNext}
-            className="absolute right-0 top-1/3 -translate-y-1/2 translate-x-12 md:translate-x-16 bg-primary hover:bg-primary/80 text-primary-foreground rounded-full p-2 transition-all z-10"
-            aria-label="Next project"
-          >
-            <ChevronRight className="h-6 w-6" />
-          </button>
-        </div>
-
-        {/* Indicators/Dots */}
-        <div className="flex justify-center gap-2 mt-8">
-          {projects.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => goToSlide(index)}
-              className={`h-3 rounded-full transition-all ${
-                index === currentIndex
-                  ? "bg-primary w-8"
-                  : "bg-primary/30 w-3 hover:bg-primary/50"
-              }`}
-              aria-label={`Go to project ${index + 1}`}
-            />
-          ))}
-        </div>
-
-        {/* Counter */}
-        <div className="text-center mt-4 text-sm text-muted-foreground">
-          {currentIndex + 1} / {projects.length}
-        </div>
+        <p className="text-center text-muted-foreground mt-8 text-sm">
+          Hover to pause the 3D carousel rotation
+        </p>
       </div>
     </section>
   )
