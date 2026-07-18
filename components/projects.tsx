@@ -15,7 +15,7 @@ export default function Projects() {
         "A bulk mail dispatch system for sending personalized messages to various recipients.",
       image: "Bulk_Mail.png",
       technologies: ["HTML", "CSS", "Vite", "Python", "Django", "PostgreSQL", "Docker", "Redis", "Celery", "Gmail API"],
-      github: "https://github.com/EncryptaIN/Encrypta.IN_APPLICATION-Mailing-System.git",
+      github: "https://github.com/Ashoksanaka/mail-system-frontend.git",
       liveUrl: "https://mailblasto.vercel.app/"
     },
     {
