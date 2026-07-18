@@ -10,37 +10,13 @@ import Image from "next/image"
 export default function Projects() {
   const projects = [
     {
-      title: "Port Scanner",
-      description:
-        "An application that scans a target IP address or domain for open ports and displays the results in a terminal console.",
-      image: "Ports.png",
-      technologies: ["C", "Bash", "Linux", "Terminal"],
-      github: "https://github.com/Ashoksanaka/PortScanner.git",
-    },
-    {
-      title: "Keylogger",
-      description:
-        "A keylogger application that captures keystrokes and saves them to a file for later analysis.",
-      image: "Keylogger.png",
-      technologies: ["Python", "Bash", "Linux", "Terminal"],
-      github: "https://github.com/Ashoksanaka/Keylogger.git",
-    },
-    {
       title: "Mailing System",
       description:
         "A bulk mail dispatch system for sending personalized messages to various recipients.",
       image: "Bulk_Mail.png",
-      technologies: ["HTML", "CSS", "JavaScript", "Python", "Flask"],
+      technologies: ["HTML", "CSS", "Vite", "Python", "Django", "PostgreSQL", "Docker", "Redis", "Celery", "Gmail API"],
       github: "https://github.com/EncryptaIN/Encrypta.IN_APPLICATION-Mailing-System.git",
-    },
-    {
-      title: "Just-Ease",
-      description:
-        "A web application that provides a platform for lawyers and clients to connect, and manage legal cases.",
-      image: "Just_Ease.png",
-      technologies: ["HTML", "Tailwind CSS", "React JS", "Python", "Django", "PostgreSQL"],
-      github: "https://github.com/Ashoksanaka/Just-Ease.git",
-      liveUrl: "https://just-ease-india.vercel.app"
+      liveUrl: "https://mailblasto.vercel.app/"
     },
     {
       title: "Resume Refiner",
