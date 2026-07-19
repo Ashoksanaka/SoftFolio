@@ -24,7 +24,7 @@ export default function Projects() {
       image: "Resume_Refiner.png",
       technologies: ["HTML", "Tailwind CSS", "Typescript", "Next.js", "Python", "Django", "PostgreSQL", "Redis", "Docker", "LaTeX", "AI", "Celery" ],
       github: "https://github.com/Ashoksanaka/Resume-Refiner-Backend",
-      liveUrl: "https://resume-refiner-frontend.vercel.app"
+      liveUrl: "https://resume-tailor.itsmeashok.in"
     },
     {
       title: "AI Wealth Advisor",
